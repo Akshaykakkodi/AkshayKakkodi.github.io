@@ -5,37 +5,94 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Akshay Kumar P</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Scroll effects */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Fade-in effect for sections */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeIn 1.5s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Hover effect on links */
+        a:hover {
+            color: #3498db;
+            text-decoration: underline;
+        }
+
+        /* Button hover effect */
+        button:hover {
+            background-color: #3498db;
+            color: white;
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+
+        /* Animating header text */
+        header h1 {
+            font-size: 3em;
+            animation: slideIn 2s ease-out;
+        }
+
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-50%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        /* Styling sections */
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <div class="container">
+        <div class="container fade-in">
             <h1>Akshay Kumar P</h1>
             <p>Flutter Developer | Designer | Enthusiast</p>
         </div>
     </header>
 
-    <section id="about" class="container">
+    <section id="about" class="container fade-in">
         <h2>About Me</h2>
-        <p>Hi, I’m Akshay Kumar P, a passionate Flutter Developer with experience in creating intuitive, high-performance mobile apps. I specialize in building scalable solutions using Flutter, Firebase, and Dart, focusing on delivering seamless user experiences.
-
-            I’m always eager to learn new technologies and stay updated with the latest trends in app development. Whether it’s building a mobile app from scratch or optimizing an existing one, I’m committed to turning ideas into elegant and functional digital products.
-            
-            Let’s create something amazing together</p>
+        <p>Hi, I’m Akshay Kumar P, a passionate Flutter Developer with experience in creating intuitive, high-performance mobile apps. I specialize in building scalable solutions using Flutter, Firebase, and Dart, focusing on delivering seamless user experiences.</p>
     </section>
 
-    <section id="experience" class="container">
+    <section id="experience" class="container fade-in">
         <h2>Experience</h2>
         <ul>
             <li>
                 <h3>Flutter Developer</h3>
                 <p><strong>Lilac Infotech</strong> (2024 - Present)</p>
-                <p>Developing and maintaining crossplatform apps using Flutter with integration of  features like API calls, maps, and real-time chat.</p>
+                <p>Developing and maintaining cross-platform apps using Flutter with integration of features like API calls, maps, and real-time chat.</p>
             </li>
-           
         </ul>
     </section>
 
-    <section id="skills" class="container">
+    <section id="skills" class="container fade-in">
         <h2>Skills</h2>
         <ul>
             <li>Flutter Development</li>
@@ -47,7 +104,7 @@
         </ul>
     </section>
 
-    <section id="projects" class="container">
+    <section id="projects" class="container fade-in">
         <h2>My Projects</h2>
         <ul>
             <li>
@@ -61,7 +118,7 @@
         </ul>
     </section>
 
-    <section id="contact" class="container">
+    <section id="contact" class="container fade-in">
         <h2>Contact</h2>
         <p>If you'd like to get in touch, feel free to reach out to me at:</p>
         <p>Email: <a href="mailto:akshaykumarp333@gmail.com">akshaykumarp333@gmail.com</a></p>
